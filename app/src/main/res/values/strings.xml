@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PrimeraApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="goto_Login">Go to Login</string>
+    <string name="goto_Register">Go to Register</string>
+
+    <string name="error_email">Email is required</string>
+    <string name="error_password">Password is required</string>
+    <string name="error_name">Name is required</string>
+
+    <string name="error_match">No match</string>
+    <string name="registered">Registered</string>
+    <string name="logged">Logged</string>
+</resources>
