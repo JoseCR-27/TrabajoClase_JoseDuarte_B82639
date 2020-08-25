@@ -16,4 +16,13 @@
     <string name="error_match">Incorrecto</string>
     <string name="registered">Registrado</string>
     <string name="logged">Logueado</string>
+    <string name="logout">Cerrar Sesion</string>
+
+    <string name="task_name">Nombre de la tarea</string>
+    <string name="add">Agregar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="want_to_delete">Quieres eliminar este elemento?</string>
+    <string name="Yes">Si</string>
+    <string name="clean_list">Borrar Lista</string>
+
 </resources>

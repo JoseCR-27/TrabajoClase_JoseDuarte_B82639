@@ -1,13 +1,15 @@
 //Jose Andres Duarte Hidalgo B82639
 package cr.ac.ucr.primeraapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import cr.ac.ucr.primeraapp.utis.AppPreferences;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -62,6 +64,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         if(name.equalsIgnoreCase("Jose") && email.equalsIgnoreCase("admin@email.com") && "123".equalsIgnoreCase(password)){
 
             //TODO: enviarlo al main activity
+            //TODO: almacenar en el storage el usuario logueado
+            AppPreferences.getInstance(this).put(AppPreferences.Keys.IS_REGISTERED_IN, true);
 
             Toast.makeText(this, R.string.registered, Toast.LENGTH_SHORT).show();
 
@@ -69,9 +73,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
             //Este es un metodo para hacer sobrecarga de metodos(metodos se llaman igual pero reciben parametros distintos)
             startActivity(intent);
-            finish();
 
-            //TODO: almacenar en el storage el usuario logueado
+
+
+
 
         }else{
             Toast.makeText(this, R.string.error_match, Toast.LENGTH_SHORT).show();
@@ -83,6 +88,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         //Este es un metodo para hacer sobrecarga de metodos(metodos se llaman igual pero reciben parametros distintos)
         startActivity(intent);
-        finish();
+
     }
 }
