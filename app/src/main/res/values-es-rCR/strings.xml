@@ -24,5 +24,7 @@
     <string name="want_to_delete">Quieres eliminar este elemento?</string>
     <string name="Yes">Si</string>
     <string name="clean_list">Borrar Lista</string>
+    <string name="profile">Perfil</string>
+    <string name="my_tasks">Tareas</string>
 
 </resources>
